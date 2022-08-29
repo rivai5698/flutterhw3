@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterhw3/main.dart';
 
 class EditInfoPage extends StatelessWidget {
 //  const ({Key? key}) : super(key: key);
@@ -26,7 +27,9 @@ class EditInfoPage extends StatelessWidget {
           ],
           leading: IconButton(
             icon: const Icon(Icons.arrow_back_ios, color: Colors.blueAccent),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>MyPageApp()));
+            },
           ),
           //elevation: 10,
         ),
